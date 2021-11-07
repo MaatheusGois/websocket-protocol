@@ -2,7 +2,7 @@ import Foundation
 
 /// An enumeration of the types of messages that can be sent and received.
 public enum WebSocketMessage: CustomStringConvertible, CustomDebugStringConvertible, Hashable {
-    case open
+    case open(URLSessionWebSocketTask)
     case binary(Data)
     case text(String)
 
